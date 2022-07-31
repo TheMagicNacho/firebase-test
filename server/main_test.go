@@ -16,5 +16,5 @@ func TestPingRoute(t *testing.T) {
 	router.ServeHTTP(w, req)
 
 	assert.Equal(t, http.StatusOK, w.Code)
-	assert.Equal(t, "server running", w.Body.String())
+	assert.Equal(t, "server running change", w.Body.String())
 }
