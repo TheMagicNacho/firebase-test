@@ -1,5 +1,5 @@
 test:
 	@go test .
-	
+
 build: test
-	@go build .
+	@go build .fi
