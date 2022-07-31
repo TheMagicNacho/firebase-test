@@ -8,8 +8,8 @@ import (
 
 func setupRouter() *gin.Engine {
 	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "server running change")
+	r.GET("/ping", func(c *gin.Context) {
+		c.String(http.StatusOK, "server running change ")
 	})
 	return r
 }
