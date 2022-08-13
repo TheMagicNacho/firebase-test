@@ -20,3 +20,12 @@ We're using testify instead of ginkgo only because my local host is having issue
 Init first: `firebase init hosting`
 
 Init for github: `firebase init hosting:github`
+*note: This is only really useful for static hosting. For microservices refer to google run*
+
+# 🐋 Containerization
+*ref: https://firebase.google.com/docs/hosting/cloud-run*
+
+- Write the code.
+- Build the container using google cloud run
+- Store the container in the container registry
+- 
