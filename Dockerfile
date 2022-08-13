@@ -31,4 +31,4 @@ EXPOSE 8080
 RUN chmod 777 server
 
 # Run the web service on container startup.
-CMD ["/server"]
+CMD ["/server/firebase-test"]

@@ -25,7 +25,9 @@ Init for github: `firebase init hosting:github`
 # 🐋 Containerization
 *ref: https://firebase.google.com/docs/hosting/cloud-run*
 
+pre-req: you'll need the google CLI https://cloud.google.com/sdk/docs/install-sdk
+
 - Write the code.
-- Build the container using google cloud run
-- Store the container in the container registry
-- 
+- Build the container using google cloud run `gcloud builds submit --tag gcr.io/PROJECT_ID/CONTAINER_TAG`
+- Store the container in the container registry 
+- push the container to cloud run `gcloud run deploy --image gcr.io/PROJECT_ID/CONTAINER_TAG`

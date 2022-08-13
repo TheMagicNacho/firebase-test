@@ -1,16 +1,18 @@
 {
   "hosting": {
-    "public": "server",
+    "public": "y",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
+    "rewrites": [ {
+      "source": "/api",
+      "run": {
+        "serviceId": "firebasetest",  
+        "region": "us-east4"
       }
-    ]
+    } ]
+  
   }
 }
